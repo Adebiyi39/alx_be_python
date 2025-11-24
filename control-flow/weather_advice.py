@@ -1,5 +1,5 @@
 # Ask user for the current weather
-weather = input("What's the weather like today? (sunny/rainy/cold): " )
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
 # Provide clothing recommendations
 if weather == "sunny":
