@@ -1,6 +1,6 @@
 #prompt user forr two numbers
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
 #Ask the type of operation
 operation = input("choose the operation (+, -, *, /): ")
@@ -27,4 +27,5 @@ match operation:
             print(f"The result is {result}")
             
     case _:
+
         print("Invalid operation selected.")                           
