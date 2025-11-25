@@ -3,7 +3,7 @@ number = int(input("Enter a number to see its multiplication table: "))
 
 # Generate and Print the Multiplication Table
 for i in range(1, 10 + 1):
-    result = number * i
-
+    result = number * 1
     print(f"{number} * {i} = {result}")
+
 
