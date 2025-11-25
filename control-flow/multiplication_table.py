@@ -1,7 +1,8 @@
 # prompt user to enter number
 number = int(input("Enter a number to see its multiplication table: "))
 
-# Generate and Print the M ultiplication Table
+# Generate and Print the Multiplication Table
 for i in range(1, 10 + 1):
     result = number * 1
+
     print(f"{number} * {i} = {result}")
