@@ -1,5 +1,5 @@
-#Prompt user for pattern size
-size = int(input("Enter the size of the paatern: "))
+# Prompt user for pattern size
+size = int(input("Enter the size of the pattern: "))
 
 # Intialized row counter
 row = 0
