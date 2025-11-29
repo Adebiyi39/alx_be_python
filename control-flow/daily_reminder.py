@@ -26,7 +26,7 @@ if time_bound.lower() == "yes":
 else:
     reminder += " This task is not time-sensitive."
 
-# Provide a Customizer Reminder
+# Provide a Customized Reminder
 print(reminder)
 
 
