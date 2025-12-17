@@ -7,13 +7,13 @@ class Book:
 # Derived Class: EBook        
 class EBook(Book):
     def __init__(self, title, author, file_size):
-        super()._init__(title, author)
+        super().__init__(title, author)
         self.file_size = file_size
 
 # Derived Class: PrintBook
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
-        super()._innit_(title, author)
+        super().__init__(title, author)
         self.page_count = page_count
 
 # Composition library 
