@@ -1,25 +1,38 @@
-class Calculator:
-    # Class attribute
-    calculation_type = "Arithmetic Operations"
+import math
 
-    @staticmethod
-    def add(a, b):
-        """
-        Static method that returns the sum of two numbers.
-        """
-        return a + b
 
-    @classmethod
-    def multiply(cls, a, b):
-        """
-        Class method that prints the calculation type
-        and returns the product of two numbers.
-        """
-        print(cls.calculation_type)
-        return a * b
+# Base Class
+class Shape:
+    def area(self):
+        raise NotImplementedError("Subclasses must implement this method")
+
+
+# Derived Class: Rectangle
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+
+# Derived Class: Circle
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * (self.radius ** 2)
 
 
 # Example usage (optional, safe for testing)
 if __name__ == "__main__":
-    print(Calculator.add(3, 4))
-    print(Calculator.multiply(3, 4))
+    shapes = [
+        Rectangle(5, 3),
+        Circle(4)
+    ]
+
+    for shape in shapes:
+        print(shape.area())
+
